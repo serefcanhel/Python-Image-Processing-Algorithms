@@ -1,0 +1,2402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1165</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>1131</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_3"/>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="pb_Blur">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>60</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>BLUR IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ROW SIZE :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>70</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>COLUMN SIZE :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_3">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>220</y>
+        <width>531</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_4">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>170</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>BLURED IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>531</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sb_BlurRow">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>60</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sb_BlurColumn">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>60</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_2">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>60</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QComboBox" name="cb_Filter_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>30</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Laplacian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sobel</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sharpened Image</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sobel Smooth</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mask Image</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Image+Mask</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Power Low</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="l_image_15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_16">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>180</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_15">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_16">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>140</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>FILTERED IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_ApplyFilter_2">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>30</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_7">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>30</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QComboBox" name="cb_Transformation">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>351</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Reflection on the X-Axis</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Reflection on the Y-Axis</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Reflection on the Both Axis</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Resize Image</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Crop Image</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="le_Trans1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>630</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sb_Trans1">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>630</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Trans2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>630</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Trans4">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>630</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Trans3">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>630</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sb_Trans2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>630</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sb_Trans3">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>630</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="sb_Trans4">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>630</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>1000</number>
+      </property>
+      <property name="singleStep">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_ApplyTransform">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>40</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>APPLY</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_5">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>130</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_6">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>130</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>TRANSFORMATED IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>541</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_6">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>170</y>
+        <width>531</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_3">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>40</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="pb_Convert">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>30</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CONVERT</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_Convert">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>RGB ---&gt; HSI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RGB ---&gt; GRAY</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RGB ---&gt; YIQ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>YIQ ---&gt; RGB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RGB ---&gt; HSV</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>HSV ---&gt; RGB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RGB ---&gt; LAB</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_7">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>110</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_8">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>110</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CONVERTED IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_8">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>160</y>
+        <width>561</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_4">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>30</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QComboBox" name="cb_HMW3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>30</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Histogram Stretching</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Histogram Equalization</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Transfer Function</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Add Intensity</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Subtract Intensity</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pb_Applyhistog">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>30</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="highValue">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>640</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Highvalue">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>630</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Hist2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>630</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QSlider" name="highValue_2">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>630</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Lowvalue">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>630</y>
+        <width>71</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Hist1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>640</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_9">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_10">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>110</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string> IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>551</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_10">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>150</y>
+        <width>561</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_5">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>30</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QLabel" name="l_image_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>551</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_14">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>120</y>
+        <width>551</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_13">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Before Histogram</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_14">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>50</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>After Histogram</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QComboBox" name="cb_Filter">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>221</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Median Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Minimum Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maximum Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Average Filter</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pb_ApplyFilter">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>40</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apply</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Filter">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QSlider" name="sp_Filter">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>40</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>255</number>
+      </property>
+      <property name="singleStep">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Filtersb">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>40</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_11">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>110</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_12">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>110</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>FILTERED IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_12">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>160</y>
+        <width>551</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_6">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>40</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QPushButton" name="pb_Choose_8">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_HighPassFilter">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>HIGH PASS FILTER</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Threshholding">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>20</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>THRESHOLDING</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_17">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_18">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>150</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_17">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_18">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>110</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>FILTERED IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_10">
+     <widget class="QPushButton" name="pb_Choose_9">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_19">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_20">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>160</y>
+        <width>541</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_HighPassFilter_2">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>30</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>MOIRE PATTERN</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_19">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_20">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>120</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>FILTERED IMAGE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_11">
+     <widget class="QPushButton" name="pb_Choose_10">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_21">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>541</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_22">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>210</y>
+        <width>541</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_21">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>160</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_22">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>160</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_Menu_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>20</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose Noise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Salt Noise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pepper Noise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gaussian Noise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Speckle Noise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Salt&amp;Pepper Noise</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="cb_Menu_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>90</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Median Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Max Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Min Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Average Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Speckle Filter</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_11">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>20</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>APPLY NOISE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_12">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>90</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>APPLY FILTER</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Filter_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>30</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Filter_3">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>90</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Filter_4">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>30</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Filter_5">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>90</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_12">
+     <widget class="QPushButton" name="pb_Choose_13">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CHOOSE IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_23">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>531</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_image_24">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>210</y>
+        <width>531</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_23">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>160</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ORIGINAL IMAGE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_factor_24">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>160</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_Menu_4">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>40</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose Filter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Open Image</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Close Image</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Extract Gradient</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="le_Filter_6">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>20</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Filter_7">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>20</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Choose_14">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>50</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Handwriting</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>APPLY FILTER</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="cb_Menu">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>271</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lucida Handwriting</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>IMAGE PROCESS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BLUR IMAGE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRANSFORMATIONS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CONVERSIONS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HISTOGRAM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HISTOGRAM GRAPHS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FILTERING</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SKELETON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>High Pass Filtering</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Moire Pattern</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Noise&amp;Filter</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Noise Reduction</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pb_Save">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>20</y>
+      <width>261</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lucida Handwriting</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>SAVE FINAL IMAGE</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1165</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

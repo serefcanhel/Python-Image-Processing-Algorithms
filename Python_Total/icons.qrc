@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>indir.jpg</file>
+    <file>indir.png</file>
+  </qresource>
+</RCC>
